@@ -27,7 +27,7 @@ $mail->SMTPOptions = array(
     )
 );
 
-$mail->setFrom(getenv("SMTP_EMAIL"),'Afnan Rafid');
+$mail->setFrom($env['SMTP_EMAIL'], 'Afnan Rafid');
 $mail->addAddress($email);
 
 $mail->isHTML(true);
